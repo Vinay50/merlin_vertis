@@ -2,6 +2,7 @@ MerlinVertis::Application.routes.draw do
   devise_for :users
   resources :home
   resources :dashboard
+  resources :leaves
   root  :to => "home#index"
 
   # The priority is based upon order of creation:

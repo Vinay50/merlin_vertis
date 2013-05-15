@@ -11,7 +11,21 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130514194905) do
+ActiveRecord::Schema.define(:version => 20130515211522) do
+
+  create_table "leaves", :force => true do |t|
+    t.integer  "user_id"
+    t.date     "start_date"
+    t.date     "end_date"
+    t.string   "description"
+    t.string   "status"
+    t.float    "unpaid_leaves"
+    t.float    "number_of_paid_leaves_taken"
+    t.float    "number_of_unpaid_leaves_taken"
+    t.float    "number_of_leaves_remaining"
+    t.datetime "created_at",                    :null => false
+    t.datetime "updated_at",                    :null => false
+  end
 
   create_table "users", :force => true do |t|
     t.string   "email",                  :default => "", :null => false
