@@ -23,9 +23,9 @@ end
 gem 'jquery-rails'
 gem 'devise'
 
-group :assets do
+
     gem 'jquery-ui-rails'
-end
+
  
  gem "jquery_datepicker"
 gem 'jquery-rails'

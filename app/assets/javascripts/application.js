@@ -17,7 +17,5 @@
 //= require_tree .
 
 $(function() {
-   $("#season_start_date").datepicker();
+  $('.datepicker').datepicker();
 });
-
- #$('#season_start_date').datepicker();
