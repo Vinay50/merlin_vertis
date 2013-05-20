@@ -1,0 +1,29 @@
+<div class="page-header">
+    <td><%= gravatar_for(@user) %></td>
+    <h4><%= @user.first_name %>'s profile on Merlin</h4>
+</div>
+
+<dl class="dl-horizontal">
+  <% if user_signed_in? %>
+    <dt><strong>Email :</strong></dt>
+    <dd><%= @user.email %></dd>
+  <% end %>
+
+  <dt><strong>First Name :</strong></dt>
+  <dd><%= @user.first_name %> </dd>
+  <dt><strong>Last Name :</strong></dt>
+  <dd><%= @user.last_name %></dd>
+  <dt><strong>Username :</strong></dt>
+  <dd><%= @user.username %></dd>
+
+</dl>
+
+<br>
+  <% if user_signed_in? && current_user == @user %>
+    <%= link_to "Edit Profile",
+      edit_user_path(@user),
+      :class => 'btn btn-primary' %>
+    <%= link_to "Change password",
+      edit_user_registration_path,
+      :class => 'btn btn-primary' %>
+  <% end %>

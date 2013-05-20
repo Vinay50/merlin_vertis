@@ -1,0 +1,617 @@
+.navbar-inner {
+  background-color: #1763A4; /* fallback color, place your own */
+
+  /* Gradients for modern browsers, replace as you see fit */
+  background-image: -moz-linear-gradient(top, #1763A4, #1763A4);
+  background-image: -ms-linear-gradient(top, #1763A4, #1763A4);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#1763A4), to(#1763A4));
+  background-image: -webkit-linear-gradient(top, #1763A4, #1763A4);
+  background-image: -o-linear-gradient(top, #00B2ED, #00B2ED);
+  background-image: linear-gradient(top, #00B2ED, #00B2ED);
+  background-repeat: repeat-x;
+
+  /* IE8-9 gradient filter */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#1763A4', endColorstr='#222222', GradientType=0);
+}
+
+.navbar .brand {
+    color: #FFFFFF;
+    display: block;
+    float: left;
+    font-size: 20px;
+    font-weight: 200;
+    margin-left: -20px;
+    padding: 10px 20px;
+    text-shadow: 0 0px 0 #FFFFFF;
+}
+
+.navbar .nav > li > a {
+    color: #FFFFFF;
+    float: none;
+    padding: 10px 15px;
+    text-decoration: none;
+    text-shadow: 0 0px 0 #FFFFFF;
+}
+
+.navbar .nav > li > a:hover {
+    background-color: #82b548;
+    color: #FFFFFF;
+    text-decoration: blink;
+    
+}
+
+#tabs ul {
+ margin-left: 0;
+ padding-left: 0;
+ display: inline;
+ color:#4895d1;
+ } 
+
+ #tabs ul li {
+ margin-left: 0;
+ margin-bottom: 110;
+ padding: 2px 15px 5px;
+ border: 0px solid #666666;
+ list-style: none;
+ font-size: 1.3em;
+ color:#4895d1;
+ 
+ float: left
+ }
+
+ #tabula ul {
+ margin-left: 0;
+ padding-left: 0;
+ display: inline;
+ } 
+
+ #tabula ul li {
+ margin-left: 0;
+ margin-bottom: 110;
+ padding: 0px 0px 0px;
+ border: 0px solid #666666;
+ list-style: none;
+ font-size: 1.0em;
+ 
+ float: left
+ }
+
+div.hireme, div#hireme {
+    background: url("img/careers2-ad-header-so-crop.png") no-repeat scroll 1px 1px #FFFFFF;
+    border: 1px solid #B5B5B5;
+    clear: both;
+    color: #333333;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 12px;
+    line-height: 130%;
+    margin: 12px 0;
+    min-height: 220px;
+    padding: 0;
+    text-align: left;
+    width: 218px;
+}
+
+.nav > li > a:hover {
+    background-color: #66C9EE;
+    color: #FFFFFF;
+    text-decoration: blink;
+  }
+
+  element.style {
+    height: 132px;
+    width: 759px;
+}
+body, input, select, textarea, button {
+    font: 13px/1.4 Helvetica,arial,freesans,clean,sans-serif;
+
+}
+
+
+.field_with_errors {
+  padding: -2px;
+  background-color: whilte;
+  display: inline;
+}
+
+
+.field_with_errors .message {
+  color: #D00;
+  padding-left: 280px;
+  font-size: 12px;
+  margin-top: -30px;
+}
+
+pre label, input, button, select, textarea {
+    background-color: #FFFFFF;
+    border-radius: px px px px;
+    display: block;
+    font-size: 13px;
+    line-height: 12px;
+    margin: 0 0 10px;
+    padding: 0px;
+    white-space: pre-wrap;
+    word-break: break-all;
+    word-wrap: break-word;
+}
+code, pre {
+    padding: 0 0px 0px;
+
+pre {
+    background-color: #FFFFFF;
+    display: block;
+    font-size: 13px;
+    line-height: 12px;
+    margin: 0 0 10px; 
+    white-space: pre-wrap;
+    word-break: break-all;
+    word-wrap: break-word;
+}
+code, pre {
+    border-radius: 3px 3px 3px 3px;
+    color: #333333;
+    font-family: Monaco,Menlo,Consolas,"Courier New",monospace;
+    font-size: 12px;
+    padding: 0 3px 2px;
+}
+
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    border: 0 none;
+}
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    border: 0 none;
+    margin: 0;
+}
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+label, input, button, select, textarea {
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 12px;
+}
+
+}
+element.style {
+    font-weight: bold;
+}
+body, input, select, textarea, button {
+    font: 13px/1.4 Helvetica,arial,freesans,clean,sans-serif;
+}
+
+#errorExplanation {
+  width: 400px;
+  border: 00px solid red;
+  padding: 7px;
+  padding-bottom: 12px;
+  margin-bottom: 20px;
+  background-color: #999911;
+}
+
+#errorExplanation h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  margin: -7px;
+  background-color: #c00;
+  color: #fff;
+}
+
+#errorExplanation p {
+  color: #333;
+  margin-bottom: 0;
+  padding: 5px;
+}
+
+#errorExplanation ul li {
+  font-size: 12px;
+  list-style: square;
+  color: #fff
+}
+
+ #upperborder
+{
+border: 1px solid #B5B5B5;
+border-radius: 00px px px px;
+margin: 0 0 20px;
+padding: 0px 0px 2px;
+background: none repeat scroll 0 0 #ffffff;
+width: 120%;
+margin-left:40px;margin-top:40px;
+}
+
+#lowerborder
+{
+border-bottom: none:border: 1px solid #E0E0F0;
+border-radius: 4px 4px 4px 4px;margin: 0 0 20px;
+ padding: 20px 20px 10px; 
+ background: none repeat scroll 0 0 #FFFFFF
+}
+
+#upperline
+{
+  border: 1px normal #E0E0F0;
+ margin-top:55px;
+}
+
+#commentform
+{
+border: px solid #1763A4; 
+border-radius: 4px 4px 4px 4px;margin: 0 0 20px; 
+padding: 20px 30px 0px; background: none repeat scroll 0 0 #;
+width: 85%
+}
+
+#commentdisplay
+{
+margin:left:80px;
+margin:right:50px;
+margin-top:30px;
+}
+
+#popular
+{
+border: 1px solid #B5B5B5;
+border-radius: 00px px px px;
+margin: -1480px 0 2px  830px;
+width:280px;
+
+}
+
+#headerpopular 
+{
+background-color:#1fb2e8;
+color:#FFFFFF;
+font-size: 1.6em;
+border: 1px solid #B5B5B5;border- radius:
+}
+
+#popular-title
+{
+margin-top:15px;
+margin-left:8px;
+font-size:1.4em;
+}
+
+#related-border
+{
+border: 1px solid #B5B5B5; 
+border-radius: 00px px px px;
+margin-left:850px;
+width:270px;
+height:200px;
+margin-top:50px; 
+}
+
+#related-title
+{
+background-color:#1fb2e8;
+color:#FFFFFF; 
+font-size: 1.6em;
+}
+
+#related-title-link
+{
+margin-top:15px;
+margin-left:8px;
+font-size:1.4em;
+}
+
+#ygm
+{
+background-color:#1fb2e8;
+color:#FFFFFF; 
+font-size: 1.6em;
+}
+
+#nofound
+{
+color:#1fb2e8;
+font-size: 1.6em;
+}
+
+#comment-body
+{
+border: 1px solid #bbb;
+border-radius: 4px 4px 4px 4px;
+margin: 0 10 0px;
+padding: 19px 20px 10px;
+background: none repeat scroll 0 0 #ffffff;
+width: 110%;
+margin-left:-25px;
+height:100%;
+}
+
+#comment-inner-body
+{
+border: px solid #66c9ee;
+border-radius: 4px 4px 4px 4px;margin:  -19px -19px 10px; padding:   1px 6px 25px; 
+background: none repeat scroll 0 0 #DDD;
+width:715px;
+height:15px;
+font-size: 1.2em;
+border-bottom: 0px solid #DDDDDD;
+}
+
+#comment-content
+{
+border: px solid #66c9ee;
+border-radius: 0px 0px 0px 0px;margin: -10px -20px -10px;
+padding:10px 15px 25px;
+background: none repeat scroll 0 0 ; 
+font-size: 1.2em;
+border-bottom: 0px solid #DDDDDD;
+}
+
+input, textarea, .uneditable-input {
+    width: 260px;
+}
+
+select, textarea, input[type="text"], input[type="password"], input[type="datetime"], input[type="datetime-local"], input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], input[type="search"], input[type="tel"], input[type="color"], .uneditable-input {
+    border-radius: 4px 4px 4px 4px;
+    color: #555555;
+    display: inline-block;
+    font-size: 14px;
+    height: 25px;
+    line-height: 20px;
+    margin-bottom: 10px;
+    padding: 4px 6px;
+    vertical-align: middle;
+}
+
+.btn.btn-create { 
+    background-color: #D14836;
+    color: #FFFFFF; 
+    background-image: none; /* the background-image needs to be reset */
+}.btn {
+  display: inline-block;
+  outline: 0;
+  margin: 0;
+  padding: 6px 12px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  cursor: pointer;
+  @include border-radius-all(4px);
+  &:active {
+    text-shadow: none;
+  }
+  &[disabled] {
+    cursor: default;
+    opacity: 0.4;
+  }
+  .icon {
+    margin-right: 7px;
+  }
+}
+
+// Default button
+// --------------------------------------------------
+
+.btn {
+  border: 1px solid rgba($black, 0.3);
+  color: $btn-default-color;
+  text-shadow: 0 1px 0 $white;
+  @include linear-gradient($white, $btn-default-background-color);
+  @include box-shadow(inset 0 -1px 2px rgba($black, 0.2));
+  &[href] {
+    color: $btn-default-color;
+  }
+  &:hover,
+  &:focus {
+    @include linear-gradient($white, $btn-default-background-color-hover);
+    @include box-shadow(none);
+  }
+  &:active {
+    @include linear-gradient($btn-default-background-color, $white);
+    @include box-shadow(inset 0 1px 3px rgba($black, 0.2));
+  }
+  &[disabled] {
+    text-shadow: 0 1px 0 $white;
+    @include linear-gradient($white, $btn-default-background-color);
+    @include box-shadow(inset 0 -1px 2px rgba($black, 0.2));
+  }
+}
+
+// Buttons used in admin panel
+// --------------------------------------------------
+.btn-admin {
+  text-align:left;
+}
+
+// Primary button
+// --------------------------------------------------
+
+.btn-primary {
+  border: 1px solid $btn-primary-border-color;
+  color: $white;
+  text-shadow: 0 1px 0 rgba($black, 0.2);
+  font-weight: bold;
+  @include linear-gradient($btn-primary-background-color, $btn-primary-background-color-dark);
+  @include box-shadow((inset 0 1px 0 rgba($white, 0.33), inset 0 -1px 2px rgba($black, 0.2)));
+  &[href] {
+    color: $white;
+  }
+  &:hover,
+  &:focus {
+    @include linear-gradient($btn-primary-background-color, $btn-primary-background-color-light);
+    @include box-shadow(inset 0 1px 0 rgba($white, 0.33));
+  }
+  &:active {
+    @include linear-gradient($btn-primary-background-color-dark, $btn-primary-background-color);
+    @include box-shadow(inset 0 1px 3px rgba($black, 0.2));
+  }
+  &[disabled] {
+    text-shadow: 0 1px 0 rgba($black, 0.2);
+    @include linear-gradient($btn-primary-background-color, $btn-primary-background-color-dark);
+    @include box-shadow((inset 0 1px 0 rgba($white, 0.33), inset 0 -1px 2px rgba($black, 0.2)));
+  }
+}
+
+.btn-primary-btn {
+  border: 1px solid $btn-primary-btn-border-color;
+  color: $yellow;
+  text-shadow: 0 1px 0 rgba($black, 0.2);
+  font-weight: bold;
+  @include linear-gradient($btn-primary-btn-background-color, $btn-primary-btn-background-color-dark);
+  @include box-shadow((inset 0 1px 0 rgba($white, 0.33), inset 0 -1px 2px rgba($black, 0.2)));
+  &[href] {
+    color: $white;
+  }
+  &:hover,
+  &:focus {
+    @include linear-gradient($btn-primary-btn-background-color, $btn-primary-btn-background-color-light);
+    @include box-shadow(inset 0 1px 0 rgba($white, 0.33));
+  }
+  &:active {
+    @include linear-gradient($btn-primary-btn-background-color-dark, $btn-primary-btn-background-color);
+    @include box-shadow(inset 0 1px 3px rgba($black, 0.2));
+  }
+  &[disabled] {
+    text-shadow: 0 1px 0 rgba($black, 0.2);
+    @include linear-gradient($btn-primary-btn-background-color, $btn-primary-btn-background-color-dark);
+    @include box-shadow((inset 0 1px 0 rgba($white, 0.33), inset 0 -1px 2px rgba($black, 0.2)));
+  }
+}
+
+// Danger button
+// --------------------------------------------------
+
+.btn-danger {
+  border: 1px solid $btn-danger-border-color;
+  color: $white;
+  text-shadow: 0 1px 0 rgba($black, 0.2);
+  font-weight: bold;
+  @include linear-gradient($btn-danger-background-color, $btn-danger-background-color-dark);
+  @include box-shadow((inset 0 1px 0 rgba($white, 0.33), inset 0 -1px 2px rgba($black, 0.2)));
+  &[href] {
+    color: $white;
+  }
+  &:hover,
+  &:focus {
+    @include linear-gradient($btn-danger-background-color, $btn-danger-background-color-light);
+    @include box-shadow(inset 0 1px 0 rgba($white, 0.33));
+  }
+  &:active {
+    @include linear-gradient($btn-danger-background-color-dark, $btn-danger-background-color);
+    @include box-shadow(inset 0 1px 3px rgba($black, 0.2));
+  }
+  &[disabled] {
+    text-shadow: 0 1px 0 rgba($black, 0.2);
+    @include linear-gradient($btn-danger-background-color, $btn-danger-background-color-dark);
+    @include box-shadow((inset 0 1px 0 rgba($white, 0.33), inset 0 -1px 2px rgba($black, 0.2)));
+  }
+}
+
+// Social buttons
+// --------------------------------------------------
+
+.btn-social {
+  color: $white;
+  text-shadow: 0 1px 0 rgba($black, 0.2);
+  @include box-shadow(inset 0 1px 0 rgba($white, 0.1));
+  &[href] {
+    color: $white;
+  }
+  &:before {
+    margin-right: 7px;
+    font-family: zocial;
+    line-height: 0.9;
+  }
+  &.google {
+    background: $google;
+    &:before {
+      content: "G";
+    }
+  }
+  &.facebook {
+    background: $facebook;
+    &:before {
+      content: "f";
+    }
+  }
+  &.twitter {
+    background: $twitter;
+    &:before {
+      content: "T";
+    }
+  }
+  &.yahoo {
+    background: $yahoo;
+    &:before {
+      content: "Y";
+    }
+  }
+  &.github {
+    background: $github;
+    &:before {
+      content: "g";
+    }
+  }
+  &.persona {
+    background: $persona;
+    &:before {
+      content: "]";
+    }
+  }
+}
+
+// Button Sizes
+// --------------------------------------------------
+
+// Small
+
+.btn-small {
+  padding: 3px 6px;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+// Large
+
+.btn-large {
+  padding: 9px 18px;
+  font-size: 16px;
+  line-height: 20px;
+ } 
+
+
+
+
+ #fabs ul {
+ margin-left: 0;
+ padding-left: 0;
+ display: inline;
+ } 
+
+ #fabs ul li {
+ margin-left: 50;
+ margin-bottom: 110;
+ padding: 2px 15px 5px;
+ border: 0px solid #B5B5B5;
+ list-style: none;
+ font-size: 1.2em;
+ 
+ float: left
+ }
+
+ #fabula ul {
+ margin-left: 50;
+ padding-left: 0;
+ display: inline;
+ } 
+
+ #fabula ul li {
+ margin-left: 50;
+ margin-bottom: 110;
+ padding: 0px 0px 0px;
+ border: 0px solid #666666;
+ background-color: #B5B5B5
+ list-style: none;
+ font-size: 1.0em;
+ float: right;
+ }
+
