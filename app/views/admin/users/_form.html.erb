@@ -1,15 +1,10 @@
 <%= form_for [:admin, @user] do |f| %>
-  <div class="alert alert-error">
+ 
     <% @user.errors.full_messages.each do |msg| %>
       <li><%= msg %></li>
     <% end %>
-  </div>
-  <div class="control-group">
-    <%= f.label :email, :class => 'control-label' %>
-    <div class="controls">
-      <%= f.text_field :email, :class => 'text_field' %>
-    </div>
-  </div>
+ 
+ 
   <div class="control-group">
     <%= f.label :first_name, :class => 'control-label' %>
     <div class="controls">
@@ -22,10 +17,52 @@
       <%= f.text_field :last_name, :class => 'text_field' %>
     </div>
   </div>
+  
   <div class="control-group">
+    <%= f.label :username, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :username, :class => 'text_field' %>
+    </div>
+  </div>
+  
+   <div class="control-group">
+    <%= f.label :email, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :email, :class => 'text_field' %>
+    </div>
+  </div>
+  
+  <div class="control-group">
+    <%= f.label :contact_no, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :contact_no, :class => 'text_field' %>
+    </div>
+  </div>
+  <div class="control-group">
+    <%= f.label :birth_date, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :birth_date, :class => 'text_field' %>
+    </div>
+  </div>
+  
+   <div class="control-group">
+    <%= f.label :joining_date, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :joining_date, :class => 'text_field' %>
+    </div>
+  </div>
+  
+   <div class="control-group">
     <%= f.label :password, :class => 'control-label' %>
     <div class="controls">
       <%= f.password_field :password, :class => 'password-field' %>
+    </div>
+  </div>
+  
+ <div class="control-group">
+    <%= f.check_box :is_active %>
+    <div class="controls">
+      <%= f.label :is_active, "Is an active user?", :class => 'control-label' %>
     </div>
   </div>
   <div class="control-group">

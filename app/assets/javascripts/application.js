@@ -11,6 +11,18 @@
 // GO AFTER THE REQUIRES BELOW.
 //
 //= require jquery
+//= require jquery.ui.all
 //= require jquery_ujs
 //= require twitter/bootstrap
 //= require_tree .
+
+$ ->
+  $("#practice_toolkeeper")
+    .select2({
+         allowClear: true,
+         placeholder: 'Select an item'
+    })
+    .select2('val',$("#toolkeeper_value").val())    
+
+$ ->
+  $("#datepicker").datepicker()
