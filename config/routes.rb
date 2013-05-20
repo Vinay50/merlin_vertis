@@ -4,13 +4,12 @@ MerlinVertis::Application.routes.draw do
   resources :dashboard
   resources :leaves
   root  :to => "home#index"
-  
   namespace :admin do
     root :to => 'base#index'
     resources :users
   end
-
   resources  :users
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

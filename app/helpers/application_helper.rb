@@ -1,5 +1,4 @@
 module ApplicationHelper
-
 def gravatar_for(user, size="80x80")
     if user.avatar_url.present?
       gravatar_url = user.avatar_url
@@ -9,5 +8,4 @@ def gravatar_for(user, size="80x80")
     end
     image_tag(gravatar_url, :size => size, alt: user.email, class: "gravatar")
   end
-
 end
