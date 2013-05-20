@@ -16,13 +16,8 @@
 //= require twitter/bootstrap
 //= require_tree .
 
-$ ->
-  $("#practice_toolkeeper")
-    .select2({
-         allowClear: true,
-         placeholder: 'Select an item'
-    })
-    .select2('val',$("#toolkeeper_value").val())    
+$(function() {
+   $("#season_start_date").datepicker();
+});
 
-$ ->
-  $("#datepicker").datepicker()
+ #$('#season_start_date').datepicker();

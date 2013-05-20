@@ -23,7 +23,12 @@ end
 gem 'jquery-rails'
 gem 'devise'
 
- gem 'jquery-ui-rails'
+group :assets do
+    gem 'jquery-ui-rails'
+end
+ 
+ gem "jquery_datepicker"
+gem 'jquery-rails'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'

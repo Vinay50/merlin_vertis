@@ -41,14 +41,14 @@
   <div class="control-group">
     <%= f.label :birth_date, :class => 'control-label' %>
     <div class="controls">
-      <%= f.text_field :birth_date, :class => 'text_field' %>
+      <%= f.text_field :birth_date, :id => 'season_start_date ' %>
     </div>
   </div>
   
    <div class="control-group">
     <%= f.label :joining_date, :class => 'control-label' %>
     <div class="controls">
-      <%= f.text_field :joining_date, :class => 'text_field' %>
+      <%= f.text_field :joining_date, :id => 'season_start_date ' %>
     </div>
   </div>
   
@@ -72,6 +72,19 @@
     </div>
   </div>
 
+   <div class="control-group">
+    <%= f.check_box :is_manager %>
+    <div class="controls">
+      <%= f.label :is_manager, "Is Manager?", :class => 'control-label' %>
+    </div>
+  </div>
+   <div class="control-group">
+    <%= f.check_box :is_hr %>
+    <div class="controls">
+      <%= f.label :is_hr, "Is HR?", :class => 'control-label' %>
+    </div>
+  </div>
+  
   <div class="form-actions">
     <%= f.submit :class => 'btn btn-primary' %>
   </div>
