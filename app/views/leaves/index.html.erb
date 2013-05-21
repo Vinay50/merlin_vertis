@@ -1,0 +1,63 @@
+<html>
+  <head></head>
+  <body>
+
+<%= form_tag({:controller => "home", :action => "index", :id => current_user.id }, { :method => "get", :class => 'form-horizontal' }) do %>  
+  <table>
+  	<tr>
+  		<td>
+  			<div>
+  				<h2>Leave Request</h2>
+  
+                <div style="width:110px">Requested By:</div>
+                <input type=text size=20 name="username" value="<%= current_user.username.capitalize %>" ><br>
+  				<br>
+  				<label> From Date </label>
+  				<input type="text" size=20 name="fromdate" id="fromdate" class="date" >
+  				<br><br>
+  				<label> To Date </label>
+  				<input type="text" size=20 name="todate" id="todate" class="date">
+  				<br><br>
+          <label>Total leaves</label>
+  				<input type="text" name="noofdays" id="noOfDays" size=20 >
+  				<br><br>
+          <label>Leave Description </label>
+          <textarea name="description" rows="8" cols="40"></textarea>
+  				<br><br>
+  				<%= submit_tag "Send For Approval", :class => 'btn btn-primary' %>  				  			
+  				&emsp; 				          
+                <%= submit_tag "Clear", :class => 'btn', :type => 'reset' %>  				
+  			</div>
+  
+  		</td>
+  		<td>
+  			<div>
+  				<h3> Your Leave Details :</h3>
+  				<table>
+  					<tr>
+  						<td>Total Leaves Alloted &nbsp; : &nbsp;</td>
+  						<td>
+  							<input type=text size=20 value="18">
+  						</td>
+  					</tr>
+  					<tr>
+  						<td>Paid Leaves Remaining &nbsp; : &nbsp;</td>
+  						<td>
+  					    <input type=text size=20 value="<%= @paid_leaves_remaining %>">
+  						</td>
+  					</tr>
+  					<tr>
+  						<td>Unpaid Leaves Taken&nbsp; : &nbsp;</td>
+  						<td>
+  							<input type=text size=20 value="<%= @unpaid_leaves_taken %>">
+  						</td>
+  					</tr>
+  				</table>
+  			</div>
+  
+  		</td>
+  	</tr>
+  </table>	
+<% end %>
+</body>
+</html>
