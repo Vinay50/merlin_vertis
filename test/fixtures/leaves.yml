@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  user_id: 1
+  start_date: 2013-05-16
+  end_date: 2013-05-16
+  description: MyString
+  status: MyString
+  unpaid_leaves: 1.5
+  number_of_paid_leaves_taken: 1.5
+  number_of_unpaid_leaves_taken: 1.5
+  number_of_leaves_remaining: 1.5
+
+two:
+  user_id: 1
+  start_date: 2013-05-16
+  end_date: 2013-05-16
+  description: MyString
+  status: MyString
+  unpaid_leaves: 1.5
+  number_of_paid_leaves_taken: 1.5
+  number_of_unpaid_leaves_taken: 1.5
+  number_of_leaves_remaining: 1.5

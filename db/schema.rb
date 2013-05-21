@@ -11,7 +11,48 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130514194905) do
+ActiveRecord::Schema.define(:version => 20130520122415) do
+
+  create_table "leaves", :force => true do |t|
+    t.integer  "user_id"
+    t.date     "start_date"
+    t.date     "end_date"
+    t.string   "description"
+    t.string   "status"
+    t.float    "unpaid_leaves"
+    t.float    "number_of_paid_leaves_taken"
+    t.float    "number_of_unpaid_leaves_taken"
+    t.float    "number_of_leaves_remaining"
+    t.datetime "created_at",                    :null => false
+    t.datetime "updated_at",                    :null => false
+  end
+
+  create_table "roles", :force => true do |t|
+    t.string   "name"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "roles_users", :force => true do |t|
+    t.integer  "user_id"
+    t.integer  "role_id"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "teams", :force => true do |t|
+    t.string   "name"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "teams_users", :force => true do |t|
+    t.integer  "user_id"
+    t.integer  "team_id"
+    t.boolean  "team_lead"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
 
   create_table "users", :force => true do |t|
     t.string   "email",                  :default => "", :null => false
@@ -28,6 +69,15 @@ ActiveRecord::Schema.define(:version => 20130514194905) do
     t.datetime "updated_at",                             :null => false
     t.boolean  "is_admin"
     t.string   "username"
+    t.string   "first_name"
+    t.string   "last_name"
+    t.string   "contact_no"
+    t.date     "birth_date"
+    t.boolean  "is_active"
+    t.date     "joining_date"
+    t.string   "avatar_url"
+    t.boolean  "is_hr"
+    t.boolean  "is_manager"
   end
 
   add_index "users", ["email"], :name => "index_users_on_email", :unique => true

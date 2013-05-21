@@ -1,0 +1,30 @@
+<%- model_class = User -%>
+<div class="page-header">
+  <h4>Run a 5K with the following Rubyists at RubyConfIndia 2013!</h4>
+</div>
+<% unless user_signed_in? %>
+
+  <%= link_to "Sign up",
+    new_user_registration_path,
+    :class => 'btn btn-primary' %>
+  <%= link_to "Sign in",
+    new_user_session_path,
+    :class => 'btn btn-primary' %>
+<% end %>
+
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @users.each do |user| %>
+      <tr class="row-<%= user.name.downcase.split.join('_') %>">
+        <td><%= link_to gravatar_for(user), user_path(user) %></td>
+        <td><%= link_to user.name, user_path(user) %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>

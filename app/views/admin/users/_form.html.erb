@@ -1,0 +1,100 @@
+
+<div style="margin-left:200px">
+<%= form_for [:admin, @user] do |f| %>
+ 
+    <% @user.errors.full_messages.each do |msg| %>
+      <li><%= msg %></li>
+    <% end %>
+ 
+ 
+  <div style=" margin-top:10px">
+    <%= f.label :first_name, :class => 'control-label' %>
+    <div class="">
+      <%= f.text_field :first_name, :class => 'text_field' %>
+    </div>
+  </div>
+  <div style="margin-left:350px; margin-top:-65px">
+    <%= f.label :last_name, :class => 'control-label' %>
+    <div class="">
+      <%= f.text_field :last_name, :class => 'text_field' %>
+    </div>
+  </div>
+  
+   <div style=" margin-top:10px">
+    <%= f.label :username, :class => 'control-label' %>
+    <div class="">
+      <%= f.text_field :username, :class => 'text_field' %>
+    </div>
+  </div>
+  
+    <div style="margin-left:350px; margin-top:-65px">
+    <%= f.label :email, :class => 'control-label' %>
+    <div class="">
+      <%= f.text_field :email, :class => 'text_field' %>
+    </div>
+  </div>
+  
+   <div style=" margin-top:10px">
+    <%= f.label :contact_no, :class => 'control-label' %>
+    <div class="">
+      <%= f.text_field :contact_no, :class => 'text_field' %>
+    </div>
+  </div>
+  <div style="margin-left:350px; margin-top:-65px">
+    <%= f.label :birth_date, :class => 'control-label' %>
+    <div class="">
+      <%= f.text_field :birth_date, :class => 'datepicker ' %>
+    </div>
+  </div>
+  
+    <div style=" margin-top:10px">
+    <%= f.label :joining_date, :class => 'control-label' %>
+    <div class="">
+      <%= f.text_field :joining_date, :class => 'datepicker ' %>
+    </div>
+  </div>
+  
+   <div style="margin-left:350px; margin-top:-65px">
+    <%= f.label :password, :class => 'control-label' %>
+    <div class="">
+      <%= f.password_field :password, :class => 'password-field' %>
+    </div>
+  </div>
+ <div style="margin-top:20px">
+    <%= f.check_box :is_active %>
+    <div class="">
+      <%= f.label :is_active, "Is an active user?", :class => 'control-label' %>
+    </div>
+  </div>
+  <div style="margin-left:190px; margin-top:-35px">
+    <%= f.check_box :is_admin %>
+    <div class="">
+      <%= f.label :is_admin, "Is an admin?", :class => 'control-label' %>
+    </div>
+  </div>
+
+ 
+    <div style="margin-left:355px; margin-top:-35px">
+    <%= f.check_box :is_hr %>
+    <div class="">
+      <%= f.label :is_hr, "Is HR?", :class => 'control-label' %>
+    </div>
+  </div>
+
+  <div style="margin-left:545px; margin-top:-35px">
+    <%= f.check_box :is_manager %>
+    <div class="">
+      <%= f.label :is_manager, "Is Manager?", :class => 'control-label' %>
+    </div>
+  </div>
+
+  <div style="margin-left:00px; margin-top:30px">
+    <%= f.submit :class => 'btn btn-primary' %>
+    
+    <div style="margin-left:130px;margin-top:-32px">
+   <%= link_to t('.back', :default => t("helpers.links.back")),
+    admin_users_path, :class => 'btn'  %>
+    </div>
+</div>
+<% end %>
+</div>

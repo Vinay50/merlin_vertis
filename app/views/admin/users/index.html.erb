@@ -1,0 +1,53 @@
+<div style="margin-left:100px;margin-top:10px">
+<h3>Users List</h3>
+
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th></th>
+      <th>Fname </th>
+       <th>Lname </th>
+        <th>Username </th>
+        <th> Email </th>
+        <th>Joining date</th>
+        <th>Birth date</th>
+
+        <th>Contact no</th>
+      
+        <th></th>
+        <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @users.each do |user| %>
+      <tr class="">
+        <td> </td>
+        <td><%= link_to gravatar_for(user), [:admin, user] %></td>
+        <td><li><%= link_to user.first_name, [:admin, user] %></td>
+        <td><%= link_to user.last_name, [:admin, user] %></td>
+        <td><%= link_to user.username, [:admin, user] %></td>
+        <td><%= link_to user.email, [:admin, user] %></td>
+        <td><%= link_to user.joining_date, [:admin, user] %></td>
+        <td><%= link_to user.birth_date, [:admin, user] %></td>
+        <td><%= link_to user.contact_no, [:admin, user] %></td>
+        <td>      
+              <%= link_to t('.edit', :default => t("helpers.links.edit")),
+                edit_admin_user_path(user), :class => 'btn btn-mini' %> </td>
+            <td>  <%= link_to t('.destroy', :default => t("helpers.links.destroy")),
+                admin_user_path(user),
+                :method => :delete,
+                :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')) },
+                :class => 'btn btn-mini btn-danger' %>
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<%= link_to t('.new', :default => t("helpers.links.new")),
+  new_admin_user_path,
+  :class => 'btn btn-primary' %>
+
+  <%= link_to t('.back', :default => t("helpers.links.back")),
+    admin_users_path, :class => 'btn'  %>
+</div>
