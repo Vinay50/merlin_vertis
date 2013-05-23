@@ -22,18 +22,19 @@
           <span class="icon-bar"></span>
         </a>
 
-       <a class="brand" href="/">Vertis Leave system</a>
+        <a class="brand" href="/">Vertis Leave system</a>
         <div class="nav-collapse">
           <ul class="nav nav-pills nav-stacked" style="font-size: 1.2em;font-weight: normal;">
             <% if user_signed_in? %>
-            <li class=""><%= link_to "Home" %></li>
-            <li class=""><%= link_to "Users", admin_root_path %></li>
-            <li id="fat-menu" class="dropdown">
+
+              <li class=""><%= link_to "Home" %></li>
+              <li class=""><%= link_to "Users", admin_root_path %></li>
+              <li id="fat-menu" class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                 Leaves <b class="caret"></b>
               </a>
               <ul class="dropdown-menu">
-                <li><%= link_to "Create New Leave", :controller => 'leaves', :action => 'index'%></li>
+                <li><%= link_to "Create New Leave"%></li>
                 <li><%= link_to "Show leaves"%></li>
               </ul>
               </li>
@@ -58,28 +59,29 @@
             <li><%= link_to "Sign up ", new_user_registration_path %></li>
             <li><%= link_to "Sign in ", new_user_session_path %></li>
           <% end %>
-      </ul>
+      </ul>     
+          </ul>
 
-         </div>
         </div>
       </div>
     </div>
   </div>
+</div>
 
 <div class="container">
-    <div class="row">
-      <div class="span9">
-        <%= bootstrap_flash %>
-        <%= yield %>
-      </div>
+  <div class="row">
+    <div class="span9">
+      <%= bootstrap_flash %>
+      <%= yield %>
     </div>
-    
+  </div>
+
 
   <footer>
- 
-  </footer>
-<!-- Javascripts
 
-<!-- Placed at the end of the document so the pages load faster -->
-<%= javascript_include_tag :defaults, "rails.validations", "rails.validations.custom" %>
+  </footer>
+  <!-- Javascripts
+
+  <!-- Placed at the end of the document so the pages load faster -->
+  <%= javascript_include_tag :defaults, "rails.validations", "rails.validations.custom" %>
 
