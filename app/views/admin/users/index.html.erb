@@ -1,53 +1,60 @@
-<div style="margin-left:100px;margin-top:10px">
-<h3>Users List</h3>
 
-<table class="table table-striped">
-  <thead>
+<div style="margin-left:30px;margin-top:-10px"> 
+<h3>Users </h3></div>
+<div style="margin-left:30px;margin-top:0px">
+<table class="tablesorter table-bordered">
+  <thead style="background-color: #ffffff;color:#ff">
     <tr>
-      <th></th>
+        <th>Image </th>
       <th>Fname </th>
        <th>Lname </th>
         <th>Username </th>
-        <th> Email </th>
-        <th>Joining date</th>
+        <th>Email </th>
+         <th >Joining date</th>
         <th>Birth date</th>
-
         <th>Contact no</th>
-      
-        <th></th>
-        <th></th>
-    </tr>
-  </thead>
-  <tbody>
+        <th>Is active</th>
+        <th>Edit user</th>
+        <th>Delete user</th>
+        <th>Show user</th>
+     </tr>
+    </thead>
+    <tbody class="table-hover">
     <% @users.each do |user| %>
       <tr class="">
-        <td> </td>
-        <td><%= link_to gravatar_for(user), [:admin, user] %></td>
-        <td><li><%= link_to user.first_name, [:admin, user] %></td>
-        <td><%= link_to user.last_name, [:admin, user] %></td>
-        <td><%= link_to user.username, [:admin, user] %></td>
-        <td><%= link_to user.email, [:admin, user] %></td>
-        <td><%= link_to user.joining_date, [:admin, user] %></td>
-        <td><%= link_to user.birth_date, [:admin, user] %></td>
-        <td><%= link_to user.contact_no, [:admin, user] %></td>
+         <td><%= gravatar_for(user) %></td>
+        <td><%= user.first_name %></td>
+        <td><%=  user.last_name %></td>
+        <td><%= user.username %></td>
+        <td><%= user.email %></td>
+        <td width="30%" ><%= user.joining_date %></td>
+        <td><%=  user.birth_date %></td>
+        <td><%=  user.contact_no %></td>
+        <td><%=  user.is_active %></td>
         <td>      
               <%= link_to t('.edit', :default => t("helpers.links.edit")),
-                edit_admin_user_path(user), :class => 'btn btn-mini' %> </td>
+                edit_admin_user_path(user), :class => '' %> </td>
             <td>  <%= link_to t('.destroy', :default => t("helpers.links.destroy")),
                 admin_user_path(user),
                 :method => :delete,
                 :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')) },
-                :class => 'btn btn-mini btn-danger' %>
+                :class => '' %>
+        </td>
+        <td>
+        <%= link_to "show", admin_user_path(user), :class => '' %>
+        
         </td>
       </tr>
     <% end %>
   </tbody>
 </table>
 
+<div style="margin-top:18px">
 <%= link_to t('.new', :default => t("helpers.links.new")),
   new_admin_user_path,
   :class => 'btn btn-primary' %>
 
   <%= link_to t('.back', :default => t("helpers.links.back")),
     admin_users_path, :class => 'btn'  %>
+ </div>
 </div>

@@ -23,17 +23,23 @@ end
 gem 'jquery-rails'
 gem 'devise'
 
-
-    gem 'jquery-ui-rails'
-
- 
- gem "jquery_datepicker"
+gem 'tabulous'
+#gem 'jquery-ui-rails' 
+gem "jquery_datepicker"
 gem 'jquery-rails'
+gem 'jquery-tablesorter'
+#gem 'jquery-ui-themes'
+gem 'jquery-ui-form'
+
+
+group :assets do
+gem 'jquery-ui-rails'
+gem 'jquery-ui-themes'
+end
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 gem "therubyracer"
-
 gem "less-rails" #Sprockets (what Rails 3.1 uses for its asset pipeline) supports LESS
 gem "twitter-bootstrap-rails"
 # To use Jbuilder templates for JSON
