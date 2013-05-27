@@ -38,7 +38,7 @@
                 admin_user_path(user),
                 :method => :delete,
                 :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')) },
-                :class => '' %>
+                :class => 'btn btn mini' %>
         </td>
         <td>
         <%= link_to "show", admin_user_path(user), :class => '' %>

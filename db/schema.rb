@@ -11,7 +11,22 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130520122415) do
+ActiveRecord::Schema.define(:version => 20130527120057) do
+
+  create_table "financial_years", :force => true do |t|
+    t.string   "finacial_year_name"
+    t.date     "start_date"
+    t.date     "end_date"
+    t.datetime "created_at",         :null => false
+    t.datetime "updated_at",         :null => false
+  end
+
+  create_table "leave_policies", :force => true do |t|
+    t.integer  "finacial_year_id"
+    t.text     "leave_policy_description"
+    t.datetime "created_at",               :null => false
+    t.datetime "updated_at",               :null => false
+  end
 
   create_table "leaves", :force => true do |t|
     t.integer  "user_id"
@@ -25,6 +40,14 @@ ActiveRecord::Schema.define(:version => 20130520122415) do
     t.float    "number_of_leaves_remaining"
     t.datetime "created_at",                    :null => false
     t.datetime "updated_at",                    :null => false
+  end
+
+  create_table "public_holidays", :force => true do |t|
+    t.integer  "finacial_year_id"
+    t.date     "day"
+    t.string   "occasion"
+    t.datetime "created_at",       :null => false
+    t.datetime "updated_at",       :null => false
   end
 
   create_table "roles", :force => true do |t|
@@ -42,14 +65,14 @@ ActiveRecord::Schema.define(:version => 20130520122415) do
 
   create_table "teams", :force => true do |t|
     t.string   "name"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
+    t.datetime "created_at",   :null => false
+    t.datetime "updated_at",   :null => false
+    t.integer  "team_lead_id"
   end
 
   create_table "teams_users", :force => true do |t|
     t.integer  "user_id"
     t.integer  "team_id"
-    t.boolean  "team_lead"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end
@@ -78,6 +101,7 @@ ActiveRecord::Schema.define(:version => 20130520122415) do
     t.string   "avatar_url"
     t.boolean  "is_hr"
     t.boolean  "is_manager"
+    t.string   "user_type"
   end
 
   add_index "users", ["email"], :name => "index_users_on_email", :unique => true

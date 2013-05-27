@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  finacial_year_name: MyString
+  start_date: 2013-05-27
+  end_date: 2013-05-27
+
+two:
+  finacial_year_name: MyString
+  start_date: 2013-05-27
+  end_date: 2013-05-27

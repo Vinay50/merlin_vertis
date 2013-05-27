@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  finacial_year_id: 1
+  leave_policy_description: MyText
+
+two:
+  finacial_year_id: 1
+  leave_policy_description: MyText
