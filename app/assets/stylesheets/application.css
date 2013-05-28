@@ -18,3 +18,82 @@
  *= require_self
  *= require_tree .
  */
+
+
+ 
+div.dataTables_length label {
+     position: relative;
+    text-align: right;
+    margin-bottom: -18px;
+}
+
+div.dataTables_length select {
+    width: 75px;
+    margin-bottom: -18px;
+     position: relative;
+}
+
+div.dataTables_filter label {
+    
+    position: relative;
+    left: 475px;
+}
+
+div.dataTables_info {
+    padding-top: 8px;
+}
+
+div.dataTables_paginate {
+    position: relative;
+    left: 475px;
+    margin-top: -20px;
+}
+
+
+/* Header cells */
+table.dataTables thead th {
+    text-align: center;
+    
+}
+
+
+table.pretty {
+    width: 125%; 
+}
+ 
+table.pretty td,
+table.pretty th {
+    padding: 5px;
+    border: 1px solid #EDF0F5;
+}
+
+/* Header cells */
+table.pretty thead th {
+    text-align: center;
+    
+}
+
+/* Body cells */
+table.pretty tbody th {
+    text-align: left;
+  
+}
+     
+table.pretty tbody td {
+    text-align: center;
+   
+}
+         
+table.pretty {
+    width: 125%; 
+}
+
+.pretty
+{
+    border: solid 1px #999;
+    color:#99999;
+}        
+
+.pretty tr:nth-child(odd):hover td, tbody tr.odd:hover td {background:#EDF0F5;}
+.pretty tr:nth-child(even):hover td, tbody tr.even:hover td {background:#EDF0F5;}
+.pretty tr:nth-child(odd) td, tbody tr.odd td {background:#EDF0F5;}

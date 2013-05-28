@@ -1,0 +1,42 @@
+<table  id='example'  class=" table-bordered table-striped pretty "> 
+  <thead style="background-color: #ffffff;height:30%">
+    <tr >
+      <th style="height:30px"> Image </th>
+      <th >First name </th>
+       <th>Last name </th>
+        <th>Username </th>
+        <th>Email </th>
+         <th >Joining date</th>
+        <th>Birth date</th>
+        <th>Contact no</th>
+        <th> Active</th>
+        <th> Action</th>
+           <th> Action</th>
+     </tr>
+    </thead>
+    <tbody class="table-hover">
+    <% @users.each do |user| %>
+      <tr class="">
+        <td><%=  gravatar_for(user)  %></td>
+        <td width="20%"><%= user.first_name %></td>
+        <td width="20%"><%=  user.last_name %></td>
+        <td><%= user.username %></td>
+        <td><%= user.email %></td>
+        <td width="22%" ><%= user.joining_date %></td>
+        <td  width="22%"><%=  user.birth_date %></td>
+        <td  width="19%"><%=  user.contact_no %></td>
+        <td  width=""><%=  user.is_active %></td>
+         <td>
+              <%= link_to t('.edit', :default => t("helpers.links.edit")),
+                edit_admin_user_path(user), :class => ' btn-small btn ' %> </td>
+              <td>
+              <%= link_to t('.destroy', :default => t("helpers.links.destroy")),
+                admin_user_path(user),
+                :method => :delete,
+                :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')) },   :class => 'btn btn-danger' %>
+        </td> 
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+

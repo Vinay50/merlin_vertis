@@ -21,20 +21,27 @@
 
  $(function() {
    $('.datepicker').datepicker({ dateFormat: 'yy-mm-dd' });
+    
+      
    });
 
 
- var oTable;
 
+/* Table initialisation */
 $(document).ready(function() {
-  $('#form').submit( function() {
-    var sData = $('input', oTable.fnGetNodes()).serialize();
-    alert( "The following data would have been submitted to the server: \n\n"+sData );
-    return false;
+  $('#example').dataTable( {
+    "sDom": "<'row'<'span6'l><'span6'f>r>t<'row'<'span6'i><'span6'p>>",
+    "sPaginationType": "bootstrap",    
+    "iDisplayLength": 5,
+    "aLengthMenu": [[5, 10, 25, 50, -1], [5, 10, 25, 50, "All"]],
+     "oLanguage": {
+      "sLengthMenu": "_MENU_ records per page"
+
+    }
+
   } );
-  
-  oTable = $('#example').dataTable();
 } );
+
 
 
 function clearDate() {
