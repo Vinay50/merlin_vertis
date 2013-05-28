@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130527120057) do
+ActiveRecord::Schema.define(:version => 20130528083401) do
 
   create_table "financial_years", :force => true do |t|
     t.string   "finacial_year_name"
@@ -102,6 +102,9 @@ ActiveRecord::Schema.define(:version => 20130527120057) do
     t.boolean  "is_hr"
     t.boolean  "is_manager"
     t.string   "user_type"
+    t.string   "desgination"
+    t.string   "user_code"
+    t.string   "designation"
   end
 
   add_index "users", ["email"], :name => "index_users_on_email", :unique => true

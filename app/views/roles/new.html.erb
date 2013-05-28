@@ -1,0 +1,14 @@
+<h3> Add new role </h3>
+<%= form_for @role  do |f| %>
+  <div>
+    <%= f.label :name, :style => "margin-top:10px;" %>
+    <div>
+      <%= f.text_field :name, :style => "width:230px; height:30px; border: 1px solid #66c9ee;margin-top:10px; background-color:#FFFFFF;" %>
+    </div>
+  </div>
+<div style="margin-top: 20px">
+    <%= f.submit nil, :class => 'btn btn-primary' %>
+    <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
+                roles_path, :class => 'btn' %>
+  </div>
+<% end %>

@@ -1,0 +1,13 @@
+<%= form_for @role  do |f| %>
+  <div>
+    <%= f.label :name, :style => "margin-top:10px;" %>
+    <div>
+      <%= f.text_field :name, :style => "width:730px; height:30px; border: 1px solid #66c9ee;margin-top:10px; background-color:#FFFFFF;" %>
+    </div>
+  </div>
+  <div style="margin-top: 20px">
+    <%= f.submit nil, :class => 'btn btn-primary' %>
+    <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
+                role_path, :class => 'btn' %>
+  </div>
+<% end %>

@@ -4,7 +4,8 @@
       <th style="height:30px"> Image </th>
       <th >First name </th>
        <th>Last name </th>
-        <th>Username </th>
+        <th>User code </th>
+        <th>Designation </th>
         <th>Email </th>
          <th >Joining date</th>
         <th>Birth date</th>
@@ -20,7 +21,8 @@
         <td><%=  gravatar_for(user)  %></td>
         <td width="20%"><%= user.first_name %></td>
         <td width="20%"><%=  user.last_name %></td>
-        <td><%= user.username %></td>
+        <td><%= user.user_code %></td>
+        <td><%= user.designation %></td>
         <td><%= user.email %></td>
         <td width="22%" ><%= user.joining_date %></td>
         <td  width="22%"><%=  user.birth_date %></td>

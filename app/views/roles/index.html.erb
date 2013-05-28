@@ -1,0 +1,19 @@
+<h4> all roles</h4>
+
+<%= link_to "add roles", new_role_path %>
+<%= @roles.each do |roles| %>
+<table>
+	<tr>
+		<td>
+          <%= roles.id%>
+       </td>
+       <td>
+          <%= roles.name %>
+       </td>
+       <td>
+          <%= roles.created_at %>
+       </td>
+   </tr>
+
+
+<% end %>

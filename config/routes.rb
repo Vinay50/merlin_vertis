@@ -1,5 +1,8 @@
 MerlinVertis::Application.routes.draw do
    devise_for :users
+     resources   :roles
+
+  match "roles/new"  => "roles#new"
   resources :home
   resources :dashboard
   resources :leaves
@@ -8,7 +11,7 @@ MerlinVertis::Application.routes.draw do
     root :to => 'base#index'
     resources :users
   end
-  resources  :users
+  resources   :users
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
